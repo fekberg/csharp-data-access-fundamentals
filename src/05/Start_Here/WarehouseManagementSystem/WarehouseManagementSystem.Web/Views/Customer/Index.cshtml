@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WarehouseManagementSystem.Customer>
+
+@{
+    ViewData["Title"] = "All customers";
+}
+
+<h1>Customers</h1>
+
+@foreach (var customer in Model)
+{
+    <div class="row mb-lg-5">
+        <div class="col-lg-8">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">@customer.Name</span>
+            </h4>
+            <div>
+                <p>@customer.Address</p>
+                <p>@customer.PostalCode</p>
+                <p>@customer.Country</p>
+            </div>
+            <a href="/Customer/Index/@customer.Id">More details</a>
+        </div>
+    </div>
+}

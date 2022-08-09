@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WarehouseManagementSystem.Order>
+
+@{
+    ViewData["Title"] = "All orders";
+}
+
+<h1>Orders</h1>
+
+@foreach (var order in Model)
+{
+    <div class="row mb-lg-5">
+        <div class="col">
+            <div class="h4">
+                <span class="text-muted">Order #</span>
+                <span class="badge badge-secondary">@order.Id</span>
+            </div>
+            <ul class="list-group">
+                @foreach (var item in order.LineItems)
+                {
+                    <li class="list-group-item">
+                        <div>
+                            <h6 class="my-0">@item.Item.Name</h6>
+                            <small class="text-muted">Quantity: @item.Quantity</small>
+                        </div>
+                        <span class="text-muted">$@(item.Item.Price * item.Quantity)</span>
+                    </li>
+                }
+
+                <li class="list-group-item">
+                    <span>Total (USD)</span>
+                    <strong>$@order.LineItems.Sum(line => line.Item.Price * line.Quantity)</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+}

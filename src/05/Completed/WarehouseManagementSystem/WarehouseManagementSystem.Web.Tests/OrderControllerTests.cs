@@ -24,9 +24,10 @@ public class OrderControllerTests
         ).Returns(new[] { new ShippingProvider() });
 
         var orderController = new OrderController(
-            orderRepository.Object,
-            shippingProviderRepository.Object,
-            itemRepository.Object
+            null // TODO: Pass Unit of Work
+            //orderRepository.Object,
+            //shippingProviderRepository.Object,
+            //itemRepository.Object
         );
 
         var createOrderModel = new CreateOrderModel

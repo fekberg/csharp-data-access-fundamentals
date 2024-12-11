@@ -1,0 +1,107 @@
+[
+  {
+    "Id": "c0ef6984-2654-481e-a3f0-c7223af32ce2",
+    "Customer": {
+      "Id": "bf496ecf-b4d3-4dd0-8447-d492ab6cba76",
+      "Name": "Filip Ekberg",
+      "Address": "Vallda",
+      "PostalCode": "434 94",
+      "Country": "Sweden",
+      "PhoneNumber": "\u002B46 555 123 123"
+    },
+    "ShippingProvider": {
+      "Id": "dbd912a5-3e64-49c8-b720-e34839e6357c",
+      "Name": "Swedish Postal Service",
+      "FreightCost": 10
+    },
+    "LineItems": [
+      {
+        "Id": "a2443c21-ce4d-416b-a7c1-522cfa4b37a4",
+        "Item": {
+          "Id": "45df60c9-90a4-4ebe-bcde-3bcf15e9ae01",
+          "Name": "Shure SM7b",
+          "Description": "Popular microphone for streaming, podcasting and voice over",
+          "Price": 399.50,
+          "InStock": 5,
+          "Warehouses": [
+            {
+              "Id": "e70d31d2-2f52-4732-b7a0-a4f5117c627e",
+              "Location": "Sweden",
+              "Items": null
+            },
+            {
+              "Id": "8dbf2ab5-55cd-47a1-a3a7-2f7716e23eed",
+              "Location": "USA",
+              "Items": null
+            }
+          ]
+        },
+        "Quantity": 2
+      },
+      {
+        "Id": "2781fa02-fadb-475e-b94c-cf3b10d3e68f",
+        "Item": {
+          "Id": "62de4d41-c5aa-477c-8272-9acb59812c60",
+          "Name": "Sennheiser MKH 416",
+          "Description": "Professional voice over microphone",
+          "Price": 1099.50,
+          "InStock": 3,
+          "Warehouses": [
+            {
+              "Id": "e70d31d2-2f52-4732-b7a0-a4f5117c627e",
+              "Location": "Sweden",
+              "Items": null
+            },
+            {
+              "Id": "8dbf2ab5-55cd-47a1-a3a7-2f7716e23eed",
+              "Location": "USA",
+              "Items": null
+            }
+          ]
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "Id": "06f454c6-a648-4c6c-9b1a-f419fbf2681b",
+    "Customer": {
+      "Id": "bf496ecf-b4d3-4dd0-8447-d492ab6cba76",
+      "Name": "Filip Ekberg",
+      "Address": "Vallda",
+      "PostalCode": "434 94",
+      "Country": "Sweden",
+      "PhoneNumber": "\u002B46 555 123 123"
+    },
+    "ShippingProvider": {
+      "Id": "dce97531-54dc-4bae-97a1-d334d6446b4e",
+      "Name": "United States Postal Service",
+      "FreightCost": 5
+    },
+    "LineItems": [
+      {
+        "Id": "1dd6ba2a-b76a-4ed9-b149-19f828d31bcf",
+        "Item": {
+          "Id": "45df60c9-90a4-4ebe-bcde-3bcf15e9ae01",
+          "Name": "Shure SM7b",
+          "Description": "Popular microphone for streaming, podcasting and voice over",
+          "Price": 399.50,
+          "InStock": 5,
+          "Warehouses": [
+            {
+              "Id": "e70d31d2-2f52-4732-b7a0-a4f5117c627e",
+              "Location": "Sweden",
+              "Items": null
+            },
+            {
+              "Id": "8dbf2ab5-55cd-47a1-a3a7-2f7716e23eed",
+              "Location": "USA",
+              "Items": null
+            }
+          ]
+        },
+        "Quantity": 4
+      }
+    ]
+  }
+]
